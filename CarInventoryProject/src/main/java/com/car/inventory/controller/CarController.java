@@ -26,13 +26,13 @@ public class CarController {
 		return carService.getAllCars();
 	}
 
-//creating a get mapping that retrieves the detail of a specific student
+//creating a get mapping that retrieves the detail of a specific car
 	@GetMapping("/car/{id}")
 	private Car getCar(@PathVariable("id") int id) {
 		return carService.getCarById(id);
 	}
 
-//creating a delete mapping that deletes a specific student
+//creating a delete mapping that deletes a specific car
 	@DeleteMapping("/car/{id}")
 	private void deleteCar(@PathVariable("id") int id) {
 		carService.delete(id);
